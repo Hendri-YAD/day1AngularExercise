@@ -1,0 +1,28 @@
+<form (ngSubmit)="processForm()" #personalDetailsForm="ngForm">
+  <!-- valid = {{ personalDetailsForm.valid }}
+  invalid = {{ personalDetailsForm.invalid }} -->
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>
+        <input type="text" name="name" required ngModel>
+      </td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>
+        <input type="email" name="email" required ngModel>
+      </td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>
+        <input type="number" name="phone" required ngModel>
+      </td>
+    </tr>
+    <tr>
+        <td colspan="2"><button type="submit" [disabled]="personalDetailsForm.invalid" style="width:100%">Add</button></td>       
+      </tr>
+  </table>
+</form>
+
