@@ -1,6 +1,9 @@
-<p style="border-style: solid; width: 14%;">
-    {{ personalDetails.name }} <br>
-    {{ personalDetails.phone }} <br>
-    {{ personalDetails.email }} <br>
-    <button type="button" (click)="deleteItem(pos)">Delete</button>
-</p>
+<div>
+    <p style="border-style: solid; width: 14%; border-radius: 8px;">
+        {{ personalDetails.name }}
+        <br> {{ personalDetails.phone }}
+        <br> {{ personalDetails.email }}
+        <br>
+        <button type="button" (click)="deleteItem(pos)">Delete</button>
+    </p>
+</div>
